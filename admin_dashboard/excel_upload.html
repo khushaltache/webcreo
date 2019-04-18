@@ -1,0 +1,345 @@
+<!doctype html>
+<html class="fixed sidebar-left-collapsed sidebar-left-with-menu">
+		<script>
+			console.log(localStorage.getItem('role'))
+				// Check browser support
+				if (localStorage.getItem('email') && localStorage.getItem('role')== '1') {
+				
+                   console.log('emfkew')
+				} else {	
+                    var base_url = window.location.pathname.split('/')[0] + "/login.html"
+					window.location.href = base_url;
+				}
+				</script>
+	
+<!-- Mirrored from preview.oklerthemes.com/porto-admin/2.1.1/pages-media-gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Mar 2019 10:34:47 GMT -->
+<head>
+
+		<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title>CRM</title>
+		<meta name="keywords" content="CRM" />
+		<meta name="description" content="CRM">
+		<meta name="author" content="okler.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="vendor/animate/animate.css">
+
+		<link rel="stylesheet" href="vendor/font-awesome/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.js"></script>		<script src="master/style-switcher/style.switcher.localstorage.js"></script>
+
+	</head>
+	<body>
+		<section class="body">
+
+			<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="index.html" class="logo">						<img src="img/logo.png" width="85" height="45" alt="Porto Admin" />					</a>					<div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">						<i class="fas fa-bars" aria-label="Toggle sidebar"></i>					</div>
+				</div>
+			
+				<!-- start: search & user box -->
+				<div class="header-right">
+			
+					
+			
+					
+			
+					<span class="separator"></span>
+			
+					<div id="userbox" class="userbox">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="img/%21logged-user.jpg" alt="Joseph Doe" class="rounded-circle" data-lock-picture="img/%21logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+								<span class="name">Manager</span>
+								<span class="role">Manager</span>
+							</div>
+			
+							<i class="fa custom-caret"></i>
+						</a>
+			
+						<div class="dropdown-menu">
+							<ul class="list-unstyled mb-2">
+								<li class="divider"></li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fas fa-user"></i> My Profile</a>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left">
+				
+				    <div class="sidebar-header">
+				        <div class="sidebar-title">
+				            Manager Dashboard
+				        </div>
+				        <div class="sidebar-toggle d-none d-md-block" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+				            <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+				        </div>
+				    </div>
+				
+				    <div class="nano">
+				        <div class="nano-content">
+				            <nav id="menu" class="nav-main" role="navigation">
+				            
+				                <ul class="nav nav-main">
+				                    <li>
+				                        <a class="nav-link" href="index.html">
+				                            <i class="fas fa-home" aria-hidden="true"></i>
+				                            <span class="current active">Dashboard</span>
+				                        </a>                        
+				                    </li>
+				                    <li>
+				                        <a class="nav-link" href="excel_upload.html">
+				                            <i class="fas fa-columns" aria-hidden="true"></i>
+				                            <span>Excel Upload</span>
+				                        </a>
+				                      <!--   <ul class="nav nav-children">
+				                            <li>
+				                                <a class="nav-link" href="#">
+				                                    excel Upload
+				                                </a>
+				                            </li>
+				                                </ul> -->
+				                            </li>
+				                        <!-- </ul>
+				                    </li> -->
+				                    <li>
+				                        <a class="nav-link" href="add_mang.html">
+				                            <i class="fas fa-copy" aria-hidden="true"></i>
+				                            <span>Add Manager</span>
+				                        </a>
+				                       <!--  <ul class="nav nav-children">
+				                            <li>
+				                                <a class="nav-link" href="">
+				                                    Add Manager
+				                                </a>
+				                            </li>                          
+				                        </ul> -->
+				                    </li>
+				                    <li>
+				                        <a class="nav-link" href="add_emp.html">
+				                            <i class="fas fa-tasks" aria-hidden="true"></i>
+				                            <span>Add Employee</span>
+				                        </a>
+				                       <!--  <ul class="nav nav-children">
+				                            <li>
+				                                <a class="nav-link" href="">
+				                                    Add Employee
+				                                </a>
+				                            </li>
+				                        </ul> -->
+				                    </li>
+				                    <li>
+				                        <a class="nav-link" href="history.html">
+				                            <i class="fas fa-list-alt" aria-hidden="true"></i>
+				                            <span>History/Overview</span>
+				                        </a>
+				                       <!--  <ul class="nav nav-children">
+				                            <li>
+				                                <a class="nav-link" href="">
+				                                    History/Overview
+				                                </a>
+				                            </li>
+				                        </ul> -->
+				                    </li>
+
+				                     				                    <li>
+									<a role="menuitem" tabindex="-1" href="login.html"><i class="fas fa-power-off"></i> Logout</a>
+								</li>
+
+				                </ul>
+				                <br>
+				                <br>
+				                <br>
+				                <br>
+				                <br>
+				                <br>
+				                <br>
+				                <!-- <br> -->
+				                <!-- <br> -->
+
+
+				               <!--  <div class="col-sm-4 text-right" style="float: left;">
+									<button type="submit" class="btn btn-primary mt-2" >Logout</button>
+								</div> -->
+				            </nav>
+				           
+				
+				           
+				
+				
+				           
+				        </div>
+				
+				       
+				        
+				
+				    </div>
+				
+				</aside>
+
+				
+				<!-- end: sidebar -->
+
+				<section role="main" class="content-body">
+					<header class="page-header">
+						<h2>Excel Upload</h2>
+					</header>
+
+					<!-- start: page -->
+					<div class="row">
+					<div class="col-lg-6">
+								<section class="card">
+									<header class="card-header">
+										<div class="card-actions">
+											<!-- <a href="#" class="card-action card-action-toggle" data-card-toggle></a> -->
+											<!-- <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a> -->
+										</div>
+						
+										<h2 class="card-title">Excel Files</h2>
+									</header>
+									<div class="card-body">
+										<table class="table table-responsive-md mb-0">
+											<thead>
+												<tr>
+													<th>#</th>
+													<th>Uploaded Date</th>
+													<th>Uploaded Time</th>
+													<th>Uploaded By</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Larry</td>
+													<td>the Bird</td>
+													<td>@twitter</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Larry</td>
+													<td>the Bird</td>
+													<td>@twitter</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Larry</td>
+													<td>the Bird</td>
+													<td>@twitter</td>
+												</tr>
+											
+
+											</tbody>
+										</table>
+									</div>
+								</section>
+							</div>
+							<div class="panel card-sign">
+					<div class="card-title-sign mt-3 text-right">
+						<h2 class="title text-uppercase font-weight-bold m-0"><i class="fas fa-user mr-1"></i> Upload Excel File</h2>
+					</div>
+					<div class="card-body">
+						<div class="alert alert-info">
+							<p class="m-0">Click on Choose File below and we will send you to the path of File!</p>
+						</div>
+
+
+
+						<div class="inner-menu-content" style="
+    /* float: left; */
+    padding-left: 151px;
+">
+							
+									<form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+</form>
+							
+										
+							
+											
+										</div>
+
+						<!-- <form>
+							<div class="form-group mb-0">
+								<div class="input-group">
+									<input name="username" type="email" placeholder="E-mail" class="form-control form-control-lg" />
+									<span class="input-group-append">
+										<button class="btn btn-primary btn-lg" type="submit">Reset!</button>
+									</span>
+								</div>
+							</div>
+
+							<p class="text-center mt-3">Remembered? <a href="pages-signin.html">Sign In!</a></p>
+						</form> -->
+					</div>
+				</div>
+			</div>
+					<!-- end: page -->
+				</section>
+			</div>
+
+			
+		</section>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.js"></script>		<script src="vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>		<script src="vendor/jquery-cookie/jquery-cookie.js"></script>		<script src="master/style-switcher/style.switcher.js"></script>		<script src="vendor/popper/umd/popper.min.js"></script>		<script src="vendor/bootstrap/js/bootstrap.js"></script>		<script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>		<script src="vendor/common/common.js"></script>		<script src="vendor/nanoscroller/nanoscroller.js"></script>		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>		<script src="vendor/jquery-placeholder/jquery-placeholder.js"></script>
+		
+		<!-- Specific Page Vendor -->		<script src="vendor/isotope/isotope.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+		<!-- Analytics to Track Preview Website -->		<script>		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)		  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');		  ga('create', 'UA-42715764-8', 'auto');		  ga('send', 'pageview');		</script>
+		<!-- Examples -->
+		<script src="js/examples/examples.mediagallery.js"></script>
+
+	</body>
+
+<!-- Mirrored from preview.oklerthemes.com/porto-admin/2.1.1/pages-media-gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Mar 2019 10:34:50 GMT -->
+</html>
